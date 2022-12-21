@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>LeCard MotoBoy Game</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+   </head>
+   <body>
+   <div class="score">
+      <div style="margin-bottom: 7px">Melhor pontuação: <span id="bestscore">0</span></div>
+      <div>Score: <span id="score">0</span></div>
+   </div>
+   <div id="game" class="game">
+      <div id="start-message" class="start-message">
+         <p>Toque para iniciar</p>
+      </div>
+      <img src="assets/ground.png" class="ground">
+      <img src="assets/ground.png" class="ground">
+      <img src="assets/dino-stationary.png" id="dino" class="dino">
+      <div id="gameover-message" class="start-message hide">
+         <p>Game over</p>
+         <span>Toque para reiniciar</span>
+      </div>
+   </div>
+   <script src="./script.js"></script>
+   </body>
+</html>

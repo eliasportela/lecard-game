@@ -1,0 +1,87 @@
+:root {
+  --txt-primary: #535353;
+  --txt-hover: #292929;
+  --background: #F7F7F7;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Press Start 2P', cursive;
+  color: var(--txt-primary);
+  background-color: var(--background);
+  margin: 0;
+}
+
+.game {
+  position: relative;
+  max-width: 600px;
+  height: 300px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.score {
+  font-size: .8rem;
+  margin: 0 auto 22vh;
+  padding: 48px 15px 0;
+  max-width: 600px;
+  overflow: hidden;
+}
+
+.start-message {
+  width: 90%;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: .8rem;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 2;
+  padding: 10px 0 16px;
+  background-color: #FFF;
+  border-radius: 3px;
+  box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%) !important;
+}
+
+.start-message p {
+  letter-spacing: .5em;
+}
+
+.start-message span {
+  font-size: .6rem;
+  text-transform: none;
+}
+
+.ground {
+  --left: 0;
+  width: 300%;
+  position: absolute;
+  bottom: 0;
+  left: calc(var(--left) * 1%);
+}
+
+.dino {
+  --bottom: 0;
+  height: 25%;
+  position: absolute;
+  left: 4%;
+  bottom: calc(var(--bottom) * 1%);
+}
+
+.cactus {
+  height: 14%;
+  position: absolute;
+  left: calc(var(--left) * 1%);
+}
+
+.hide {
+  display: none;
+}
